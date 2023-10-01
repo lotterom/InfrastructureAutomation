@@ -85,6 +85,6 @@ def start_tftp_server_and_download_config(tftp_server, filename):
     os.system(f"download_config_command {filename}")
 
 #functie cinfig switch uitvoeren
-configure_switch('switch_config.csv')#naam csv
+configure_switch('InfrastructureAutomation/Python/switch_config.csv')#naam csv
 #TFTP functie uitvoeren
 start_tftp_server_and_download_config('192.168.10.12', 'switch_config.txt')#ip van tftp server, naam bestand

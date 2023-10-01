@@ -1,0 +1,6 @@
+vlan,description,ip address,subnetmask,ports
+10,Server VLAN,192.168.10.1,255.255.255.0,Gi0/1,Gi0/2
+20,Accounting VLAN,192.168.20.1,255.255.255.0,Gi0/3
+30,HR VLAN,192.168.30.1,255.255.255.0,Gi0/4
+40,Marketing VLAN,192.168.40.1,255.255.255.0,Gi0/5
+50,Production VLAN,192.168.50.1,255.255.255.0,Gi0/6

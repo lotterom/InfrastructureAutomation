@@ -9,7 +9,14 @@ enable_dhcp() {
 
 # statisch IP instellen
 set_static_ip(){
+    ip_address = "192.168.0.12"
+    subnet_mask = "255.255.255.0"
+    gateway = "192.168.0.1"
 
+    echo " Statisch IP..."
+    ifconfig eth0 $ip_address netmask $subnet_mask
+    route add default gw $gateway
+    echo "Statisch IP is ingesteld"
 }
 
 # Hoofdmenu

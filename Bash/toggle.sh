@@ -9,9 +9,9 @@ enable_dhcp() {
 
 # statisch IP instellen
 set_static_ip(){
-    ip_address = "192.168.0.12"
-    subnet_mask = "255.255.255.0"
-    gateway = "192.168.0.1"
+    read -p "Voer ip adres in: " ip_address
+    read -p "Voer subnetmasker in: " subnet_mask
+    read -p "Voer gateway in: " gateway
 
     echo " Statisch IP..."
     ifconfig eth0 $ip_address netmask $subnet_mask

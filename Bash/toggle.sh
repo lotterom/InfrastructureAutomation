@@ -7,6 +7,7 @@ enable_dhcp() {
     echo "DHCP is ingeschakeld"
 }
 
+# statisch IP instellen
 set_static_ip(){
 
 }

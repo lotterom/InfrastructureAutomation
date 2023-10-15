@@ -14,3 +14,9 @@ while IFS=, read -r subnet start end; do
     echo "  range $start $end;" >> /etc/dhcp/dhcpd.conf
     echo "}" >> /etc/dhcp/dhcpd.conf
 done < "$input_file"
+
+#reboot dhcp server
+systemctl restart isc-dhcp-server
+
+#confirm output
+echo "DHCP-ranges toegevoegd aan dhcpd.conf en DHCP-server herstart."
